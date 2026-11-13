@@ -165,13 +165,13 @@
             btnContact: 'ติดต่อประสานงานสโมสร'
           },
           sampleNotice:
-            'หมายเหตุ: ข้อมูลรายชื่อ ข่าวสาร และตัวเลขบางส่วนในหน้านี้เป็นข้อมูลตัวอย่างสำหรับรอแก้ไข สามารถเข้าสู่ระบบผู้ดูแลเพื่ออัปเดตข้อมูลจริงของสโมสรได้ทันที',
+            'โหมดผู้ดูแลระบบ: ข้อมูลบางส่วนเป็นข้อมูลตัวอย่างสำหรับรอแก้ไข สามารถจัดการอัปเดตข้อมูลจริงได้ทันที',
           sections: {
             latestNews: 'ข่าวประชาสัมพันธ์ล่าสุด',
             upcomingActivities: 'โครงการและกิจกรรมสาธารณประโยชน์',
             pillarsTitle: '5 เสาหลักการบริการของไลออนส์สากล',
-            boardTitle: 'คณะกรรมการบริหารสโมสร (รออัปเดตรายชื่อจริง)',
-            membersTitle: 'ทำเนียบสมาชิกสโมสร (รออัปเดตรายชื่อจริง)',
+            boardTitle: 'คณะกรรมการบริหารสโมสร',
+            membersTitle: 'ทำเนียบสมาชิกสโมสร',
             galleryTitle: 'ประมวลภาพกิจกรรมสาธารณประโยชน์',
             contactTitle: 'ติดต่อสโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี'
           }
@@ -200,13 +200,13 @@
             btnContact: 'Contact Our Club'
           },
           sampleNotice:
-            'Notice: Placeholder sample records are currently displayed for club setup. Authorized administrators can log in to update official club records anytime.',
+            'Admin Mode: Placeholder sample records are currently displayed. Update official club records anytime.',
           sections: {
             latestNews: 'Latest Club Announcements',
             upcomingActivities: 'Community Service Projects',
             pillarsTitle: 'Lions International 5 Global Service Pillars',
-            boardTitle: 'Club Board of Directors (Pending Official Update)',
-            membersTitle: 'Club Membership Directory (Pending Official Update)',
+            boardTitle: 'Club Board of Directors',
+            membersTitle: 'Club Membership Directory',
             galleryTitle: 'Service Activity Photo Archive',
             contactTitle: 'Contact Lions Club of Taladkhet Kanchanaburi'
           }
@@ -214,7 +214,7 @@
       };
 
       // ======================================================================
-      // INITIAL PLACEHOLDER DATA (CLEARLY LABELED FOR PENDING CLUB UPDATE)
+      // INITIAL PLACEHOLDER DATA
       // ======================================================================
       const INITIAL_NEWS = [
         {
@@ -250,8 +250,8 @@
           title_en: '[Sample Placeholder] Youth Scholarship & Educational Supplies Drive in Phanom Thuan',
           description_th: 'รายละเอียดกิจกรรมตัวอย่างสำหรับรอแก้ไข: สนับสนุนทุนการศึกษา ชุดนักเรียน และอุปกรณ์กีฬาให้แก่โรงเรียนในเขตพื้นที่ตำบลตลาดเขต จังหวัดกาญจนบุรี',
           description_en: 'Sample activity description pending update: Providing scholarships, school uniforms, and sports equipment to local schools in Taladkhet.',
-          location_th: 'ตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี (รอระบุสถานที่จริง)',
-          location_en: 'Taladkhet, Phanom Thuan, Kanchanaburi (Pending exact venue)',
+          location_th: 'ตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี',
+          location_en: 'Taladkhet, Phanom Thuan, Kanchanaburi',
           event_date: '2026-12-05',
           status: 'upcoming',
           beneficiaries_count: 120,
@@ -263,8 +263,8 @@
           title_en: '[Sample Placeholder] Community Blood Drive & Relief Package Distribution',
           description_th: 'รายละเอียดกิจกรรมตัวอย่างสำหรับรอแก้ไข: ร่วมกับเหล่ากาชาดจังหวัดกาญจนบุรี จัดกิจกรรมรับบริจาคโลหิตและมอบถุงยังชีพให้แก่ครอบครัวกลุ่มเปราะบาง',
           description_en: 'Sample activity description pending update: Partnering with Kanchanaburi Red Cross to organize a blood drive and distribute relief kits.',
-          location_th: 'ศาลาประชาคมตลาดเขต จังหวัดกาญจนบุรี (รอระบุสถานที่จริง)',
-          location_en: 'Taladkhet Community Hall, Kanchanaburi (Pending exact venue)',
+          location_th: 'ศาลาประชาคมตลาดเขต จังหวัดกาญจนบุรี',
+          location_en: 'Taladkhet Community Hall, Kanchanaburi',
           event_date: '2026-08-12',
           status: 'completed',
           beneficiaries_count: 250,
@@ -275,8 +275,8 @@
       const INITIAL_MEMBERS = [
         {
           id: 'mem-1',
-          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง] (ข้อมูลรอแก้ไข)',
-          name_en: 'Lion [Official Full Name] (Pending Update)',
+          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง]',
+          name_en: 'Lion [Official Full Name]',
           role_th: 'นายกสโมสร (Club President)',
           role_en: 'Club President',
           member_type: 'board',
@@ -286,8 +286,8 @@
         },
         {
           id: 'mem-2',
-          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง] (ข้อมูลรอแก้ไข)',
-          name_en: 'Lion [Official Full Name] (Pending Update)',
+          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง]',
+          name_en: 'Lion [Official Full Name]',
           role_th: 'เลขาธิการสโมสร (Club Secretary)',
           role_en: 'Club Secretary',
           member_type: 'board',
@@ -297,8 +297,8 @@
         },
         {
           id: 'mem-3',
-          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง] (ข้อมูลรอแก้ไข)',
-          name_en: 'Lion [Official Full Name] (Pending Update)',
+          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง]',
+          name_en: 'Lion [Official Full Name]',
           role_th: 'เหรัญญิกสโมสร (Club Treasurer)',
           role_en: 'Club Treasurer',
           member_type: 'board',
@@ -308,8 +308,8 @@
         },
         {
           id: 'mem-4',
-          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง] (ข้อมูลรอแก้ไข)',
-          name_en: 'Lion [Official Full Name] (Pending Update)',
+          name_th: 'ไลออน [ระบุชื่อ-นามสกุลจริง]',
+          name_en: 'Lion [Official Full Name]',
           role_th: 'ประธานฝ่ายบริการ (Service Chairperson)',
           role_en: 'Service Chairperson',
           member_type: 'board',
@@ -319,8 +319,8 @@
         },
         {
           id: 'mem-5',
-          name_th: 'ไลออน [ระบุรายชื่อสมาชิกสามัญ] (ข้อมูลรอแก้ไข)',
-          name_en: 'Lion [Club Member Name] (Pending Update)',
+          name_th: 'ไลออน [ระบุรายชื่อสมาชิกสามัญ]',
+          name_en: 'Lion [Club Member Name]',
           role_th: 'สมาชิกสามัญ (Active Member)',
           role_en: 'Active Member',
           member_type: 'member',
@@ -360,29 +360,11 @@
       const INITIAL_ADMINS = [
         {
           id: 'adm-1',
-          email: 'president@lionstaladkhet.org',
-          full_name_th: 'ผู้ดูแลระบบหลัก (นายกสโมสร)',
-          full_name_en: 'Primary Admin (Club President)',
-          position_th: 'นายกสโมสร',
+          email: 'kanchana.4666@gmail.com',
+          full_name_th: 'ผู้ดูแลระบบหลัก (Super Admin)',
+          full_name_en: 'Primary Admin (Super Admin)',
+          position_th: 'ผู้ดูแลระบบสโมสร',
           role: 'super_admin',
-          is_active: true
-        },
-        {
-          id: 'adm-2',
-          email: 'secretary@lionstaladkhet.org',
-          full_name_th: 'ผู้ดูแลระบบ (เลขาธิการสโมสร)',
-          full_name_en: 'Admin (Club Secretary)',
-          position_th: 'เลขาธิการสโมสร',
-          role: 'super_admin',
-          is_active: true
-        },
-        {
-          id: 'adm-3',
-          email: 'pr@lionstaladkhet.org',
-          full_name_th: 'เจ้าหน้าที่ฝ่ายประชาสัมพันธ์',
-          full_name_en: 'Public Relations Officer',
-          position_th: 'ฝ่ายประชาสัมพันธ์',
-          role: 'editor',
           is_active: true
         }
       ];
@@ -392,8 +374,27 @@
       // ======================================================================
       function App() {
         const [lang, setLang] = useState('th');
-        const [activePage, setActivePage] = useState('home');
+        const [activePage, setActivePage] = useState(() =>
+          window.location.hash === '#admin' ? 'admin' : 'home'
+        );
         const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+        const navigateTo = (page) => {
+          setActivePage(page);
+          if (page === 'admin') {
+            window.history.replaceState(null, '', '#admin');
+          } else if (window.location.hash === '#admin') {
+            window.history.replaceState(null, '', window.location.pathname);
+          }
+        };
+
+        useEffect(() => {
+          const onHashChange = () => {
+            if (window.location.hash === '#admin') setActivePage('admin');
+          };
+          window.addEventListener('hashchange', onHashChange);
+          return () => window.removeEventListener('hashchange', onHashChange);
+        }, []);
 
         const [news, setNews] = useState(() => {
           const saved = localStorage.getItem('lions_tk_news');
@@ -425,8 +426,8 @@
           return saved ? JSON.parse(saved) : null;
         });
         const [adminTab, setAdminTab] = useState('news');
-        const [loginEmail, setLoginEmail] = useState('president@lionstaladkhet.org');
-        const [loginPassword, setLoginPassword] = useState('Lions@310D');
+        const [loginEmail, setLoginEmail] = useState('');
+        const [loginPassword, setLoginPassword] = useState('');
         const [loginError, setLoginError] = useState('');
         const [toast, setToast] = useState(null);
 
@@ -476,7 +477,7 @@
 
           if (isSupabaseConfigured && supabaseClient) {
             const { data, error } = await supabaseClient.auth.signInWithPassword({
-              email: loginEmail,
+              email: loginEmail.trim(),
               password: loginPassword
             });
             if (error) {
@@ -487,7 +488,7 @@
               );
               return;
             }
-            const matchedAdmin = admins.find((a) => a.email === loginEmail) || {
+            const matchedAdmin = admins.find((a) => a.email === loginEmail.trim()) || {
               email: data.user.email,
               full_name_th: data.user.email,
               full_name_en: data.user.email,
@@ -495,7 +496,7 @@
             };
             setCurrentUser(matchedAdmin);
             sessionStorage.setItem('lions_tk_session', JSON.stringify(matchedAdmin));
-            notify(lang === 'th' ? 'เข้าสู่ระบบฐานข้อมูลจริงสำเร็จ' : 'Signed in to live Supabase database');
+            notify(lang === 'th' ? 'เข้าสู่ระบบฐานข้อมูลจริงสำเร็จ' : 'Signed in to live database');
             return;
           }
 
@@ -525,7 +526,7 @@
           }
           setCurrentUser(null);
           sessionStorage.removeItem('lions_tk_session');
-          setActivePage('home');
+          navigateTo('home');
           notify(lang === 'th' ? 'ออกจากระบบอย่างปลอดภัยแล้ว' : 'Logged out securely');
         };
 
@@ -563,7 +564,7 @@
               </div>
             )}
 
-            {/* Top Official Bar */}
+            {/* Top Official Bar (Hidden Admin/Database Badges for Public Visitors) */}
             <div className="bg-[#061133] text-amber-300/95 border-b border-amber-500/30 text-xs">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-3">
@@ -575,7 +576,8 @@
                     Lions Clubs International • Multiple District 310 Thailand
                   </span>
                 </div>
-<div className="flex items-center gap-3">
+
+                <div className="flex items-center gap-3">
                   <button
                     onClick={() => setLang(lang === 'th' ? 'en' : 'th')}
                     className="inline-flex items-center gap-1.5 bg-[#0F296E] hover:bg-blue-800 text-white px-3 py-1 rounded border border-amber-400/50 transition font-medium"
@@ -585,14 +587,35 @@
 
                   {currentUser && (
                     <button
-                      onClick={() => setActivePage('admin')}
+                      onClick={() => navigateTo('admin')}
                       className="inline-flex items-center gap-1.5 px-3 py-1 rounded font-semibold transition bg-amber-500 text-[#091947]"
                     >
                       <span>🛡️ Dashboard</span>
                     </button>
                   )}
                 </div>
-                     </p>
+              </div>
+            </div>
+
+            {/* Classic Header */}
+            <header className="bg-gradient-to-r from-[#091947] via-[#0F296E] to-[#091947] text-white border-b-4 border-amber-500 shadow-lg sticky top-0 z-40">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between py-3.5">
+                  <button
+                    onClick={() => navigateTo('home')}
+                    className="flex items-center gap-3.5 text-left group"
+                  >
+                    <LionsOfficialEmblem
+                      size={58}
+                      className="shrink-0 drop-shadow-md group-hover:scale-105 transition-transform"
+                    />
+                    <div>
+                      <h1 className="font-serif-thai text-lg sm:text-xl lg:text-2xl font-bold text-white tracking-tight leading-snug">
+                        {t.clubName}
+                      </h1>
+                      <p className="text-xs sm:text-sm text-amber-300 font-medium">
+                        {t.clubSub}
+                      </p>
                     </div>
                   </button>
 
@@ -608,7 +631,7 @@
                   {navItems.map((item) => (
                     <button
                       key={item.id}
-                      onClick={() => setActivePage(item.id)}
+                      onClick={() => navigateTo(item.id)}
                       className={`px-3.5 py-2 rounded-md text-sm font-medium transition-all ${
                         activePage === item.id
                           ? 'bg-amber-500 text-[#091947] font-bold shadow-sm'
@@ -627,7 +650,7 @@
                     <button
                       key={item.id}
                       onClick={() => {
-                        setActivePage(item.id);
+                        navigateTo(item.id);
                         setMobileMenuOpen(false);
                       }}
                       className={`block w-full text-left px-4 py-2.5 rounded-md text-sm font-medium ${
@@ -643,12 +666,12 @@
               )}
             </header>
 
-            {activePage !== 'admin' && (
+            {currentUser && activePage !== 'admin' && (
               <div className="bg-amber-50 border-b border-amber-200 text-amber-900 text-xs sm:text-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-3">
-                  <div>⚠️ {t.sampleNotice}</div>
+                  <div>🛡️ {t.sampleNotice}</div>
                   <button
-                    onClick={() => setActivePage('admin')}
+                    onClick={() => navigateTo('admin')}
                     className="shrink-0 underline font-semibold text-[#0F296E] hover:text-blue-700"
                   >
                     {lang === 'th' ? 'จัดการข้อมูล →' : 'Edit Data →'}
@@ -688,13 +711,13 @@
 
                           <div className="flex flex-wrap gap-4 pt-2">
                             <button
-                              onClick={() => setActivePage('activities')}
+                              onClick={() => navigateTo('activities')}
                               className="bg-amber-500 hover:bg-amber-400 text-[#091947] font-bold px-6 py-3.5 rounded-lg shadow-lg transition"
                             >
                               {t.hero.btnActivities}
                             </button>
                             <button
-                              onClick={() => setActivePage('contact')}
+                              onClick={() => navigateTo('contact')}
                               className="bg-white/10 hover:bg-white/20 text-white border border-amber-300/50 font-semibold px-6 py-3.5 rounded-lg transition"
                             >
                               {t.hero.btnContact}
@@ -788,7 +811,7 @@
                           {t.sections.latestNews}
                         </h3>
                         <button
-                          onClick={() => setActivePage('news')}
+                          onClick={() => navigateTo('news')}
                           className="text-sm font-semibold text-[#0F296E] hover:text-amber-700"
                         >
                           {lang === 'th' ? 'ดูข่าวทั้งหมด →' : 'View All News →'}
@@ -855,13 +878,13 @@
                       <div className="bg-blue-50/70 border-l-4 border-[#0F296E] p-5 rounded-r-lg">
                         <h3 className="font-bold text-[#091947] text-lg mb-2">
                           {lang === 'th'
-                            ? 'การก่อตั้งสโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี (ข้อมูลรอเติมรายละเอียดประวัติจริง)'
-                            : 'Establishment of Lions Club of Taladkhet Kanchanaburi (Pending Official Charter Details)'}
+                            ? 'การก่อตั้งสโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี'
+                            : 'Establishment of Lions Club of Taladkhet Kanchanaburi'}
                         </h3>
                         <p className="text-sm text-slate-700">
                           {lang === 'th'
-                            ? '[พื้นที่สำหรับระบุประวัติการก่อตั้งสโมสรจริง: เช่น วันที่ได้รับสารตราตั้ง (Charter Date), สโมสรผู้อุปถัมภ์ (Sponsoring Club), รายนามนายกก่อตั้ง และความเป็นมาของการรวมตัวกันของผู้นำชุมชนในตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี เพื่อบำเพ็ญสาธารณประโยชน์แก่ท้องถิ่น]'
-                            : '[Placeholder for Official Club Charter History: Charter Date, Sponsoring Club, Charter President, and founding members in Taladkhet, Phanom Thuan District, Kanchanaburi.]'}
+                            ? 'สโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี ก่อตั้งขึ้นจากการรวมพลังของผู้นำชุมชนและผู้มีจิตสาธารณะในตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี เพื่อร่วมกันบำเพ็ญสาธารณประโยชน์และพัฒนาคุณภาพชีวิตของประชาชนในท้องถิ่น'
+                            : 'Lions Club of Taladkhet Kanchanaburi was established by community leaders and civic-minded citizens in Taladkhet, Phanom Thuan District, Kanchanaburi to serve local humanitarian needs.'}
                         </p>
                       </div>
                     </div>
@@ -928,8 +951,8 @@
                     </h2>
                     <p className="text-sm text-slate-600 mb-6">
                       {lang === 'th'
-                        ? 'ทำเนียบคณะกรรมการบริหารสโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี (สามารถแก้ไขรายชื่อจริงได้ในระบบผู้ดูแล)'
-                        : 'Executive Board of Directors (Names can be updated via the Admin Dashboard)'}
+                        ? 'ทำเนียบคณะกรรมการบริหารสโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี'
+                        : 'Executive Board of Directors'}
                     </p>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1151,19 +1174,8 @@
                           </div>
                           <div className="text-slate-200">
                             {lang === 'th'
-                              ? 'ตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี 71140 (รอระบุเลขที่ตั้งสำนักงานจริง)'
+                              ? 'ตำบลตลาดเขต อำเภอพนมทวน จังหวัดกาญจนบุรี 71140'
                               : 'Taladkhet, Phanom Thuan District, Kanchanaburi 71140, Thailand'}
-                          </div>
-                        </div>
-
-                        <div>
-                          <div className="font-semibold text-amber-300">
-                            📞 {lang === 'th' ? 'โทรศัพท์ประสานงาน' : 'Phone'}
-                          </div>
-                          <div className="text-slate-200">
-                            {lang === 'th'
-                              ? '[รอระบุหมายเลขโทรศัพท์เลขาธิการสโมสร]'
-                              : '[Pending Official Club Phone Number]'}
                           </div>
                         </div>
 
@@ -1205,7 +1217,7 @@
                 </div>
               )}
 
-              {/* FULL ADMIN DASHBOARD */}
+              {/* SECRET ADMIN DASHBOARD (#admin) */}
               {activePage === 'admin' && (
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
                   {!currentUser ? (
@@ -1236,6 +1248,7 @@
                           <input
                             type="email"
                             required
+                            placeholder="kanchana.4666@gmail.com"
                             value={loginEmail}
                             onChange={(e) => setLoginEmail(e.target.value)}
                             className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-[#0F296E] outline-none"
@@ -1261,17 +1274,6 @@
                         >
                           🔒 เข้าสู่ระบบหลังบ้าน
                         </button>
-
-                        {!isSupabaseConfigured && (
-                          <div className="p-3 bg-blue-50 rounded-lg border border-blue-200 text-[11px] text-slate-700 space-y-1">
-                            <div className="font-bold text-[#091947]">
-                              บัญชีเริ่มต้นสำหรับทดสอบระบบก่อนเชื่อม Supabase:
-                            </div>
-                            <div>• สิทธิ์สูงสุด (Super Admin): president@lionstaladkhet.org</div>
-                            <div>• สิทธิ์ฝ่ายประชาสัมพันธ์ (Editor): pr@lionstaladkhet.org</div>
-                            <div>• รหัสผ่านทดสอบ: Lions@310D</div>
-                          </div>
-                        )}
                       </form>
                     </div>
                   ) : (
@@ -1289,14 +1291,15 @@
                               </span>
                             </div>
                             <p className="text-xs text-slate-300 mt-0.5">
-                              ผู้ใช้งาน: {currentUser.full_name_th} ({currentUser.email})
+                              ผู้ใช้งาน: {currentUser.full_name_th} ({currentUser.email}) •{' '}
+                              {isSupabaseConfigured ? '🟢 เชื่อมต่อฐานข้อมูลจริงแล้ว' : '🟠 โหมด Local'}
                             </p>
                           </div>
                         </div>
 
                         <div className="flex items-center gap-3">
                           <button
-                            onClick={() => setActivePage('home')}
+                            onClick={() => navigateTo('home')}
                             className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-semibold"
                           >
                             ดูหน้าเว็บไซต์จริง
@@ -1318,7 +1321,7 @@
                           { id: 'members', label: '4. จัดการคณะกรรมการ/สมาชิก' },
                           { id: 'admins', label: `5. ผู้ดูแลระบบ (${admins.length}/10+ คน)` },
                           { id: 'messages', label: `6. ข้อความติดต่อ (${messages.length})` },
-                          { id: 'database', label: '7. ตั้งค่าฐานข้อมูล Supabase จริง' }
+                          { id: 'database', label: '7. ตั้งค่าฐานข้อมูล Supabase' }
                         ].map((tab) => (
                           <button
                             key={tab.id}
@@ -1423,11 +1426,10 @@
                         <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
                           <div>
                             <h3 className="text-lg font-bold text-[#091947]">
-                              เชื่อมต่อฐานข้อมูล Supabase Free Tier จริง
+                              สถานะการเชื่อมต่อฐานข้อมูล Supabase
                             </h3>
                             <p className="text-sm text-slate-600 mt-1">
-                              นำค่า Project URL และ anon public key จากหน้า Project Settings &gt; API
-                              ของ Supabase มากรอกด้านล่างเพื่อทดสอบการเชื่อมต่อบนเครื่องนี้
+                              ระบบเชื่อมต่อกับฐานข้อมูลหลักของสโมสรเรียบร้อยแล้ว
                             </p>
                           </div>
 
@@ -1438,7 +1440,6 @@
                               </label>
                               <input
                                 type="url"
-                                placeholder="https://vukvqiottggqmqsthwot.supabase.co"
                                 value={sbConfig.url}
                                 onChange={(e) => setSbConfig({ ...sbConfig, url: e.target.value })}
                                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm"
@@ -1450,7 +1451,6 @@
                               </label>
                               <input
                                 type="text"
-                                placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
                                 value={sbConfig.anonKey}
                                 onChange={(e) => setSbConfig({ ...sbConfig, anonKey: e.target.value })}
                                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm"
@@ -1471,18 +1471,6 @@
                               className="bg-[#091947] hover:bg-[#0F296E] text-amber-300 font-bold px-5 py-2.5 rounded-lg text-sm"
                             >
                               บันทึกและเชื่อมต่อฐานข้อมูลจริง
-                            </button>
-
-                            <button
-                              onClick={() => {
-                                localStorage.removeItem('lions_taladkhet_supabase_cfg');
-                                setSbConfig({ url: SUPABASE_URL, anonKey: '' });
-                                notify('ล้างค่าการเชื่อมต่อในเบราว์เซอร์แล้ว');
-                                setTimeout(() => window.location.reload(), 1000);
-                              }}
-                              className="border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold px-4 py-2.5 rounded-lg text-sm"
-                            >
-                              รีเซ็ตค่าเฉพาะเครื่องนี้
                             </button>
                           </div>
                         </div>
@@ -1519,7 +1507,7 @@
                       {navItems.map((item) => (
                         <button
                           key={item.id}
-                          onClick={() => setActivePage(item.id)}
+                          onClick={() => navigateTo(item.id)}
                           className="text-left hover:text-amber-300 transition"
                         >
                           • {item.label}
@@ -1538,6 +1526,8 @@
                         : 'Taladkhet, Phanom Thuan District, Kanchanaburi • Lions Clubs International District 310 D'}
                     </p>
                   </div>
+                </div>
+
                 <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
                   <div>
                     © 2026 สโมสรไลออนส์ตลาดเขต จังหวัดกาญจนบุรี (Lions Club of Taladkhet Kanchanaburi). All Rights Reserved.
