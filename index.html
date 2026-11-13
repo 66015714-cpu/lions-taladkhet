@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="th">
   <head>
     <meta charset="UTF-8" />
@@ -27,8 +27,11 @@
       const { useState, useEffect } = React;
 
       // ======================================================================
-      // SUPABASE REAL DATABASE CONNECTOR
+      // ตั้งค่าการเชื่อมต่อฐานข้อมูล SUPABASE 
       // ======================================================================
+      const SUPABASE_URL = 'https://vukvqiottggqmqsthwot.supabase.co';
+      const SUPABASE_ANON_KEY = 'sb_publishable_YqAs0CnqiyP0Q3h3WNbdag_c4-jyTmK';
+
       const getStoredConfig = () => {
         try {
           const raw = localStorage.getItem('lions_taladkhet_supabase_cfg');
@@ -39,9 +42,16 @@
       };
 
       const storedCfg = getStoredConfig();
-      const isSupabaseConfigured = Boolean(storedCfg.url && storedCfg.anonKey && window.supabase);
+      const activeUrl = storedCfg.url || SUPABASE_URL;
+      const activeKey =
+        storedCfg.anonKey ||
+        (SUPABASE_ANON_KEY && SUPABASE_ANON_KEY !== 'วาง_ANON_PUBLIC_KEY_ตรงนี้'
+          ? SUPABASE_ANON_KEY
+          : '');
+
+      const isSupabaseConfigured = Boolean(activeUrl && activeKey && window.supabase);
       const supabaseClient = isSupabaseConfigured
-        ? window.supabase.createClient(storedCfg.url, storedCfg.anonKey)
+        ? window.supabase.createClient(activeUrl, activeKey)
         : null;
 
       // ======================================================================
@@ -422,7 +432,7 @@
 
         const [sbConfig, setSbConfig] = useState(() => {
           const saved = localStorage.getItem('lions_taladkhet_supabase_cfg');
-          return saved ? JSON.parse(saved) : { url: '', anonKey: '' };
+          return saved ? JSON.parse(saved) : { url: activeUrl, anonKey: activeKey };
         });
 
         const t = TRANSLATIONS[lang];
@@ -1462,7 +1472,7 @@
                             </h3>
                             <p className="text-sm text-slate-600 mt-1">
                               นำค่า Project URL และ anon public key จากหน้า Project Settings &gt; API
-                              ของ Supabase มากรอกด้านล่างเพื่อเปลี่ยนจากโหมดทดสอบเป็นฐานข้อมูลจริงออนไลน์ทันที
+                              ของ Supabase มากรอกด้านล่างเพื่อทดสอบการเชื่อมต่อบนเครื่องนี้
                             </p>
                           </div>
 
@@ -1473,7 +1483,7 @@
                               </label>
                               <input
                                 type="url"
-                                placeholder="https://xxxxxxxxxxxx.supabase.co"
+                                placeholder="https://vukvqiottggqmqsthwot.supabase.co"
                                 value={sbConfig.url}
                                 onChange={(e) => setSbConfig({ ...sbConfig, url: e.target.value })}
                                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm"
@@ -1511,13 +1521,13 @@
                             <button
                               onClick={() => {
                                 localStorage.removeItem('lions_taladkhet_supabase_cfg');
-                                setSbConfig({ url: '', anonKey: '' });
-                                notify('ล้างค่าการเชื่อมต่อแล้ว');
+                                setSbConfig({ url: SUPABASE_URL, anonKey: '' });
+                                notify('ล้างค่าการเชื่อมต่อในเบราว์เซอร์แล้ว');
                                 setTimeout(() => window.location.reload(), 1000);
                               }}
                               className="border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold px-4 py-2.5 rounded-lg text-sm"
                             >
-                              รีเซ็ตการเชื่อมต่อ
+                              รีเซ็ตค่าเฉพาะเครื่องนี้
                             </button>
                           </div>
                         </div>
