@@ -59,16 +59,14 @@
       // OFFICIAL LIONS CLUBS INTERNATIONAL EMBLEM (VECTOR SVG)
       // ======================================================================
       const LionsOfficialEmblem = ({ size = 56, className = '' }) => (
-        <svg
-          width={size}
-          height={size}
-          viewBox="0 0 200 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className={className}
-          aria-label="Lions Clubs International Official Emblem"
-        >
-          <defs>
+  <img
+    src="/lions-logo.png"
+    alt="Lions Club of Taladkhet Logo"
+    style={{ width: size, height: size }}
+    className={`object-contain ${className}`}
+  />
+);
+        
             <radialGradient id="lionsGold" cx="35%" cy="30%" r="70%">
               <stop offset="0%" stopColor="#FDE047" />
               <stop offset="45%" stopColor="#EAB308" />
